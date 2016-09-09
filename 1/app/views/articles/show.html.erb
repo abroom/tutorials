@@ -1,0 +1,19 @@
+<h1>showing your FUCKING Article</h1>
+<p>
+	<strong>Title:</strong>
+	<%= @article.title %>
+</p>
+
+<p>
+	<strong>Text:</strong>
+	<%= @article.text %>
+</p>
+
+<h2>Listing all Fucking comments for this particular article</h2>
+<%= render @article.comments %>
+
+<h2>Add a FUCKING comment</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_article_path %>
+<%= link_to 'Back', articles_path %>
